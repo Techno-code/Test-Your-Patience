@@ -2,7 +2,7 @@ let startBtn = document.getElementById('start');
 let stopBtn = document.getElementById('stop');
 let resetBtn = document.getElementById('reset');
 
-// let hour = 00;
+// let hour = 00; df
 let minute = 00;
 let second = 00;
 let count = 00;
