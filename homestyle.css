@@ -1,0 +1,16 @@
+h1 {
+  margin: auto;
+  width: 50%;
+  color: #351F39;
+  font-size: 35px;
+  padding: 10px;
+}
+
+body {
+background: rgb(255,95,165);
+background: -moz-radial-gradient(circle, rgba(255,95,165,1) 0%, rgba(180,119,255,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(255,95,165,1) 0%, rgba(180,119,255,1) 100%);
+background: radial-gradient(circle, rgba(255,95,165,1) 0%, rgba(180,119,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5fa5",endColorstr="#b477ff",GradientType=1);
+  font-family: 'Press Start 2P';
+} 
