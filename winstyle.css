@@ -1,0 +1,9 @@
+body {
+background: rgb(75,247,197);
+background: -moz-radial-gradient(circle, rgba(75,247,197,1) 14%, rgba(70,252,195,1) 22%, rgba(80,241,198,1) 31%, rgba(230,63,251,1) 88%);
+background: -webkit-radial-gradient(circle, rgba(75,247,197,1) 14%, rgba(70,252,195,1) 22%, rgba(80,241,198,1) 31%, rgba(230,63,251,1) 88%);
+background: radial-gradient(circle, rgba(75,247,197,1) 14%, rgba(70,252,195,1) 22%, rgba(80,241,198,1) 31%, rgba(230,63,251,1) 88%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4bf7c5",endColorstr="#e63ffb",GradientType=1);
+  font-family: 'Press Start 2P';
+  color: #FFDF00;
+} 

@@ -28,14 +28,10 @@ resetBtn.addEventListener('click', function() {
   document.getElementById('sec').innerHTML = "00";
   document.getElementById('count').innerHTML = "00";
 });
-// function win(){
-//   if (timer) {
-    
-//   }
-// }
 function stopWatch() {
   if (timer) {
     count++;
+
 
     if (count == 100) {
       second++;
@@ -64,6 +60,10 @@ function stopWatch() {
       countString = "0" + countString;
     }
 
+    if (minute >= 2) {
+      window.location.href = "win-page.html";
+    }
+
     document.getElementById('min').innerHTML = minString;
     document.getElementById('sec').innerHTML = secString;
     document.getElementById('count').innerHTML = countString;
@@ -71,13 +71,8 @@ function stopWatch() {
 
   }
 }
-//var z = "no touch";
 function myMoveFunction() {
-  /*document.getElementById("demo").innerHTML = z = "moved";*/
-  if (MouseEvent) {
-    
-    // hour = 0;
-
+  if (MouseEvent || KeyboardEvent) {
     minute = 0;
     second = 0;
     count = 0;
@@ -85,6 +80,4 @@ function myMoveFunction() {
     document.getElementById('sec').innerHTML = "00";
     document.getElementById('count').innerHTML = "00";
   }
-  /*object.addEventListener("mousemove", myScript);
-  wait(5)*/
 }
