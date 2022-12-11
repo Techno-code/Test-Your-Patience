@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible"
 		content="IE=edge">
+  
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0">
 	<title>Patience </title>
@@ -14,23 +15,32 @@
       <source src="https://cdn.discordapp.com/attachments/1051152626722549870/1051229029455384686/Y2Mateis-Sweden-C418-synthwave80.mp3">
 </audio>
 </audio>
+<audio autoplay loop>
+      <source src="https://cdn.discordapp.com/attachments/1051152626722549870/1051283855795040287/Y2Mate.is_-_Microsoft_Windows_XP_Error_-_Sound_Effect_HD-0lhhrUuw2N8-48k-1655211306851.mp3">
+</audio>
+</audio>
+<audio autoplay loop>
+      <source src="https://cdn.discordapp.com/attachments/1051152626722549870/1051284544743034961/Y2Mate.is_-_My_Movie-TFwXbp9bLlY-144p-1655211466864.mp3">
+</audio>
+</audio>
     <audio autoplay loop>
 <audio autoplay loop>
       <source src="https://cdn.discordapp.com/attachments/1051152626722549870/1051264190192570378/random-synth-sounds_mp3cut.net.mp3">
 </audio>
 </audio>
-<video autoplay muted loop id="myVideo">
-  <source src="">
+<!-- <video autoplay muted loop id="myVideo">
+  <source src="https://drive.google.com/uc?export=download&id=1Lt-2c0OWYMXGHX9X5qzPzk7tOR0X0qI2">
   Your browser does not support HTML5 video.
-</video>
+</video> -->
 </head>
 
 <body onmousemove="myMoveFunction()">
-  <style>
-                background: 
-url("https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg");
-                
-                  
+<video autoplay muted loop id="myVideo">
+  <source src="https://drive.google.com/uc?export=download&id=1Lt-2c0OWYMXGHX9X5qzPzk7tOR0X0qI2" type="video/mp4">
+</video>
+
+<div class="content">
+  <style> 
             }
         </style>
 	<div class="container">
@@ -47,9 +57,9 @@ url("https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wal
 			<span class="digit" id="count">
 			00</span>
 		</div>
-	<div id="buttons">
+<!-- 	<div id="buttons">
 			<button class="btn" id="start">
-			Start</button>
+			Start</button> -->
 <!-- 			<button class="btn" id="stop">
 			Stop</button>
 			<button class="btn" id="reset">
@@ -59,6 +69,20 @@ url("https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wal
 
 
 	<script src="script.js"></script>
+  <script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
 </body>
 
 </html>

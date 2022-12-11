@@ -8,10 +8,10 @@ let second = 00;
 let count = 00;
 let game_start = false;
 
-startBtn.addEventListener('click', function() {
-  timer = true;
-  stopWatch();
-});
+// startBtn.addEventListener('click', function() {
+timer = true;
+stopWatch();
+// });
 
 stopBtn.addEventListener('click', function() {
   timer = false;
@@ -28,7 +28,11 @@ resetBtn.addEventListener('click', function() {
   document.getElementById('sec').innerHTML = "00";
   document.getElementById('count').innerHTML = "00";
 });
-
+// function win(){
+//   if (timer) {
+    
+//   }
+// }
 function stopWatch() {
   if (timer) {
     count++;
@@ -71,7 +75,7 @@ function stopWatch() {
 function myMoveFunction() {
   /*document.getElementById("demo").innerHTML = z = "moved";*/
   if (MouseEvent) {
-    timer = false;
+    
     // hour = 0;
 
     minute = 0;
@@ -80,9 +84,6 @@ function myMoveFunction() {
     document.getElementById('min').innerHTML = "00";
     document.getElementById('sec').innerHTML = "00";
     document.getElementById('count').innerHTML = "00";
-
-    wait(0)
-    timer = true;
   }
   /*object.addEventListener("mousemove", myScript);
   wait(5)*/
